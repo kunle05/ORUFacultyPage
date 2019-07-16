@@ -1,0 +1,82 @@
+body {
+    font-family: Serif, sans-serif;
+}
+.fixed-top {
+    background-color: #002f60;
+    opacity: 0.9;
+}
+.mySlides {
+    background-image: url("./images/ORU-WEB-COVER.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 350px;
+}
+.display-3 {
+    margin-top: 200px
+}
+.members {
+    width: 48%;
+}
+.searchWord {
+    font-size: 11px;
+}
+.facMember:hover {
+    color: #002f60;
+    transform: scale(1.2);
+}
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.title {
+    color: #002f60;
+}
+.title:hover {
+    text-decoration-line: none;
+    color: #002f60;
+}
+footer{
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #041e42;
+    border-top: 4px outset #B1B1B1;
+}
+.base {
+    width: 390px;
+    list-style: none;
+    vertical-align: top;
+    margin-left: 55px;
+}
+.base li {
+    list-style: none;
+    margin: 10px;
+}
+.myList {
+    height: 150px;
+    padding: 10px;
+}
+.baseImg {
+    width: 330px;
+    vertical-align: top;
+    margin-left: 55px;
+    background: #041e42;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+}
+.searchNav {
+    background: #cfb67c;
+}
+.btn {
+    background: #002f60;
+    color: white;
+}
+.navB:hover {
+    text-decoration-line: none;
+    color: #c1a157;
+}
