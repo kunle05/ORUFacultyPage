@@ -7,13 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">   
 </head>
-<body class="bg-light">
-    <header class="text-center">
+<body>
+    <header class="text-center title">
         <nav class="fixed-top">
             <img src="images/ORU-LOGO.png" alt="ORU" height="80" width="240"> 
         </nav>
+        <div class="mySlides mt-5">
+            <div class="pt-5">
+                <p class="display-3 font-weight-bold text-white">MAKE NO LITTLE PLANS HERE</p>
+            </div>
+        </div>
+        <div class="mySlides mt-5">
+            <div class="pt-5">
+                <p class="display-3 font-weight-bold text-white">MAKE NO LITTLE PLANS HERE</p>
+            </div>
+        </div>
         <div class="mySlides mt-5">
             <div class="pt-5">
                 <p class="display-3 font-weight-bold text-white">MAKE NO LITTLE PLANS HERE</p>
@@ -57,147 +70,361 @@
                 </div>
             </form>
         </div>
-        <div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/lois_ablin.jpg" alt="Lois Ablin" height="220" width="190" class="rounded d-inline-block facMember"></a>
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class=" title font-weight-bold ">DR. LOIS ABLIN</a></h4>
-                    <P class="main">ASSOCIATE PROFESSOR OF CHEMISTRY</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> lablin@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6926</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+        <button class="btn expand float-right content mt-5 mb-2">Open All +</button>
+        <div class="content">
+            <h2 class="btn col-12 text-left" data-toggle="collapse" data-target="#ArtsNCulture" >COLLEGE OF ARTS AND CULTURAL STUDIES <i class="fas fa-plus float-right"></i></h2>
+            <div id="ArtsNCulture" class="collapse mb-4">
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/kerry-loescher.jpg" alt="Kerry" height="160" width="120" class="rounded d-inline-block facMember" id="kerry-loescher"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember" id="kerry-loescher"><a href="" class="title font-weight-bold">KERRY LOESCHER</a> </h5>
+                        <P class="main">INSTRUCTOR OF PRACTICAL MINISTRY, UNDERGRADUATE COLLEGE OF THEOLOGY AND MINISTRY</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> kloescher@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6102</p>
+                    </div>
+                </div>         
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/amanda-wilson.jpg" alt="Amanda Wilson" height="160" width="120" class="rounded d-inline-block facMember" id="amanda-wilson"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember" id="amanda-wilson"><a href="" class="title font-weight-bold">DR. AMANDA WILSON</a></h5>
+                        <P class="main">ASSOCIATE PROFESSOR OF ELEMENTARY & EARLY CHILDHOOD EDUCATION</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> awilson@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.7688</p>
+                    </div>
+                </div>
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/vinson-synan.jpg" alt="vinson-synan" height="160" width="120" class="rounded d-inline-block facMember" id="vinson-synan"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember" id="vinson-synan"><a href="" class="title font-weight-bold">DR. VINSON SYNAN </a></h5>
+                        <P class="main">SCHOLAR IN RESIDENCE; PH.D. PROGRAM DIRECTOR, GRADUATE SCHOOL OF THEOLOGY AND MINISTRY</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> hsynan@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.7016</p>
+                    </div>
+                </div>
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/bill_collier.jpg" alt="WILLIAM COLLIER" height="160" width="120" class="rounded d-inline-block facMember" id="bill_collier"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember" id="bill_collier"><a href="" class="title font-weight-bold">DR. WILLIAM COLLIER </a></h5>
+                        <P class="main">PROFESSOR OF CHEMISTRY</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> lwcollier@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6927</p>
+                    </div>
                 </div>
             </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/Stephen-Wheat.jpg" alt="Stephen Wheat" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. STEPHEN R. WHEAT</a></h4>
-                    <P class="main">PROFESSOR OF COMPUTER SCIENCE</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> swheat@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6692</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+            <div class="coll mt-5 mb-5" id="kerry-loescher">
+                <img class="float-left mr-4" src="images/kerry-loescher.jpg" alt="Kerry" height="315" width="255">
+                <div>
+                    <h3 class="font-weight-bold title">KERRY LOESCHER <button class="float-right btn-danger"><i class="far fa-window-close bg-danger"></i></button> </h3>
+                    <h6 class="mb-4">INSTRUCTOR OF PRACTICAL MINISTRY, UNDERGRADUATE COLLEGE OF THEOLOGY AND MINISTRY</h6>
+                    <P>
+                        “Go on a GRAND adventure!” If you spend any time at all with Professor Kerry Loescher you will likely hear her encourage you to do this. This encouragement comes with the challenge of putting your “yes” on the table before Jesus ever asks anything of you. Prof. Loescher knows that it is in following Jesus that the best adventures become reality in our lives."
+                    </p>
+                    <p>
+                        Prof. Kerry Loescher is a graduate of Oral Roberts University. It was here during both her undergraduate and masters degrees that God confirmed her call to ministry and helped her to discover her gifts in training leaders. Her calling, gifts, and training opened up a world of adventure to her as she worked in local churches serving in their youth ministry, outreach, and mission efforts. For more than 15 years she had the joy of serving on the pastoral staff in the local church helping young people and their families connect the dots between Jesus and their everyday lives. 
+                    </p>
+                    <p>
+                        In 2007 adventure came to her life in a BIG way. She and her husband Randy completed the adoption of a sibling group from Guatemala. They became the parents of 5 adolescents and a toddler (from a surprise pregnancy during the adoption process) within a very short period of time. The gospel came to life in their family is ways beyond their imagination.
+                    </p>
+                    <p>
+                        Prof. Loescher has written numerous curriculums for regional youth camps and retreats. She is a sought after national speaker who specializes in training leaders to engage next generations and their families with the gospel. She is a published author of numerous journal articles and other resources. She is currently working on a Ph.D in Educational Studies. Prof. Loescher will tell you though that her best job and biggest adventure is following hard after Jesus.
+                    </p>
+                </div>  
+            </div>
+            <div class="coll mt-5 mb-5" id="amanda-wilson">
+                <img class="float-left mr-4" src="images/amanda-wilson.jpg" alt="Amanda" height="315" width="255">
+                <div>
+                    <h3 class="font-weight-bold title">DR. AMANDA WILSON <button class="float-right btn-danger"><i class="far fa-window-close bg-danger"></i></button></h3>
+                    <h6 class="mb-4">ASSISTANT PROFESSOR OF ELEMENTARY & EARLY CHILDHOOD EDUCATION</h6>
+                    <P>
+                        Dr. Amanda Wilson has always loved education and knew she  wanted to be a teacher from a very early age. From babysitting jobs to the  Teacher Cadet program at her high school, Dr. Wilson worked with young children  to garner experiences that would propel her toward her goals in education. 
+                    </p>
+                    <p>
+                        Dr. Wilson first came to ORU as an undergraduate majoring in  Elementary Education. After completing her bachelor’s degree, she began to  teach in a local Christian school as a first and third grade teacher. She then  continued her education at Northeastern State University where she earned a  master’s degree in Reading. It was her love of literacy that caused Dr. Wilson  to eventually exit the elementary classroom in order to pursue teaching future  educators. 
+                    </p>
+                    <p>
+                        Most recently, Dr. Wilson has worked at ORU as a graduate  assistant, adjunct professor, and the Quest Whole Person Dean’s Fellow for the  College of Education while completing her doctoral degree in Educational  Leadership. She has spoken at national conferences and multiple professional  developments for current literacy educators. Her teaching experiences also  include early childhood courses, remedial reading for college students, and  literacy for students in countries such as Japan, Colombia, Mexico, and El  Salvador. 
+                    </p>
+                    <p>
+                        Dr. Wilson is extremely excited to be a full-time professor  for the same department that prepared her for the elementary classroom. She  considers it a privilege to work with teacher candidates as they pursue a  career in education. Dr. Wilson’s hope is that her students will experience the  same Spirit-empowered education and transformation that she had while she was a  College of Education student many years earlier.
+                    </p>
+                </div>  
+            </div>
+            <div class="coll mt-5 mb-5" id="vinson-synan">
+                <img class="float-left mr-4" src="images/vinson-synan.jpg" alt="Vinson" height="315" width="255">
+                <div>
+                    <h3 class="font-weight-bold title">DR. VINSON SYNAN <button class="float-right btn-danger"><i class="far fa-window-close bg-danger"></i></button></h3>
+                    <h6 class="mb-4">SCHOLAR IN RESIDENCE; PH.D. PROGRAM DIRECTOR, GRADUATE SCHOOL OF THEOLOGY AND MINISTRY</h6>
+                    <P>
+                        Dr. Vinson Synan is one the leading authorities on the history of Holiness, Pentecostal and the Charismatic Movements. Writing and editing more than 20 books in his lifetime, he has contributed works such as The Holiness Pentecostal Movement in the United States, The Old-Time Power, and his most recent major work, The Century of the Holy Spirit. In addition to these publications Dr. Synan released his memoirs titled An Eyewitness Remembers the Century of the Holy Spirit in 2010. His work and writings are authoritative resources on the history of Pentecostalism and various other topics in the church. In addition, he was one of the founders to the Society for Pentecostal Studies (SPS) in 1970. 
+                    </p>
+                    <p>
+                        Synan earned the B.A. degree at the University of Richmond in 1958 and the M.A. degree (1964) and Ph. D. degree (1967) at the University of Georgia. For four years he served on the faculty of Oral Roberts University. He now serves as Dean Emeritus in the School of Divinity of Regent University and Interim Dean of the College of Theology and Ministry at ORU.
+                    </p>
+                </div>  
+            </div>
+            <div class="coll mt-5 mb-5" id="bill_collier">
+                <img class="float-left mr-4" src="images/bill_collier.jpg" alt="Bill" height="315" width="255">
+                <div>
+                    <h3 class="font-weight-bold title">DR. WILLIAM COLLIER <button class="float-right btn-danger"><i class="far fa-window-close bg-danger"></i></button></h3>
+                    <h6 class="mb-4">PROFESSOR OF CHEMISTRY</h6>
+                    <P>
+                        Dr. Collier is a man who loves God, loves Chemistry and loves people. That passion hangs on his office wall. His southern accent sends you to the midst of North Carolina where he grew up, but the photos that decorate his office wall send you much further--they immerse you in the heart of science among the world. 
+                    </p>
+                    <p>
+                        After finishing his Ph.D. at Oklahoma State University in Physical Chemistry and Molecular Spectroscopy and working six years at the US NIPER Department of Energy Lab managed by the IITRI, he began teaching chemistry at ORU. It was then that he took advantage of the summers to get involved in research and science education in countries far removed from his native land.
+                    </p>
+                    <p>
+                        He was awarded a Fulbright Research Fellowship to Budapest, Hungary, in 1997, a Cooperative Studies Fellowship to the same during the 2005-2006 academic year, and a NSF-ROA award to North Carolina State University in 2001. While in Hungary, he was interviewed by the second largest paper in Hungary in a near page interview discussing the American intelligent design movement. 
+                    </p>
+                    <p>
+                        His research has focused on the vibrational spectroscopy of biologically interesting, and energy industry useful molecules. He has created computational tools, (FCART06 and THERPOLY), that make it easier for the professional researcher to understand and interpret the infrared and Raman spectra of molecules and how to use them for their research problems. He co-founded and co-teaches the ORU honors program Philosophy of Science honors seminar and has an interest in the intersection of Christian and scientific philosophy.
+                    </p>
+                    <P>
+                        Teaching English as second language is an additional interest. He has used it to help second language-English speaking science students improve their presentation and scientific writing skills. Dr. Collier has made four trips to the People’s Republic of China, where he presented molecular spectroscopy papers to Chinese Universities and assisted international students and faculty with their scientific English. "China in the 80's," he says," was not an easy place to live”, but much has changed since then.
+                    </P>
+                    <P>
+                        He became a Christian at an early age in a Methodist church, in part because of the influence of the hymns he sang. He later became involved with the charismatic renewal. He has studied Christian worldview and is fascinated with the interaction of science and faith. Dr. Collier was able to work with churches in Kiev, Ukraine, at the time when Ukraine was breaking away from Russia. When not working he lives with his wife Susan, and their four kids, Jessica, Justin, Andrew, and Tiffany. He participates in their many family activities, ranging from camping, Boy Scouts, fly-fishing, church life, and banjo playing.
+                    </P>
+                    <P>
+                        Where his love of God and his passion for science collide, Dr. Collier asks, "Can you be a man of faith and a scientist? I would say the two in the truest sense are the same. It is Christ in you the hope of glory. I have worked throughout world through the opportunities that science affords.” Dr. Collier says he wants students to come to ORU and get involved in science because they can do just that--make a difference and go places they would never believe possible. "Places that only science can take you", he says. 
+                    </P>
+                </div>  
+            </div>        
+        </div>
+
+        <div class="content">
+            <h2 class="btn col-12 text-left" data-toggle="collapse" data-target="#Business" >COLLEGE OF BUSINESS <i class="fas fa-plus float-right"></i></h2>
+            <div id="Business" class="collapse mb-4">
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/doris-feltham.jpg" alt="doris-feltham" height="160" width="120" class="rounded d-inline-block facMember" id="doris-feltham"></a>    
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember" id="doris-feltham"><a href="" class="title font-weight-bold">DR. DORIS FELTHAM</a></h5>
+                        <P class="main">ASSOCIATE PROFESSOR OF FINANCE</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> dfeltham@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6113</p>
+                    </div>
+                </div>
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/chancey-bosch.jpg" alt="Chancey" height="160" width="120" class="rounded d-inline-block facMember" id="chancey-bosch"></a>   
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember" id="chancey-bosch"><a href="" class="title font-weight-bold">DR. CHANCEY BOSCH</a></h5>
+                        <P class="main">ASSOCIATE PROFESSOR OF CURRICULUM AND INSTRUCTION</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> cbosch@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6595</p>
+                    </div>
                 </div>
             </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/amanda-wilson.jpg" alt="Amanda Wilson" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. AMANDA WILSON</a></h4>
-                    <P class="main">ASSOCIATE PROFESSOR OF ELEMENTARY & EARLY CHILDHOOD EDUCATION</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> awilson@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.7688</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+            <div class="coll mt-5 mb-5" id="doris-feltham">
+                <img class="float-left mr-4" src="images/doris-feltham.jpg" alt="doris-feltham" height="315" width="255">
+                <div>
+                    <h3 class="font-weight-bold title">DR. DORIS FELTHAM <button class="float-right btn-danger"><i class="far fa-window-close bg-danger"></i></button> </h3>
+                    <h6 class="mb-4">ASSOCIATE PROFESSOR OF FINANCE</h6>
+                    <P>
+                        Doris Feltham is an associate professor of finance whose  primary responsibilities include teaching undergraduate and graduate finance  courses as well as senior paper. She is  also an advisor to undergraduate finance majors. Doris began teaching for ORU  in 2010 as an adjunct online accounting and finance professor. 
+                    </p>
+                    <p>
+                        After graduating from ORU with a major in accounting, Doris  began her professional career as an auditor in a CPA firm and later  transitioned into the tax department. Upon completing her MBA – Finance at  Dallas Baptist University, she began teaching as an adjunct. During the last  twenty years, Doris has worked in the both public accounting and higher  education. Her public accounting experience includes business consulting,  auditing, tax planning as well as the managing a local CPA firm. 
+                    </p>
+                    <p>
+                     In addition to teaching  at ORU, she has taught at King University, Arkansas State University, North  Central University and University of Wisconsin-Rock County. Her online teaching  experience also includes University of Maryland University College – Europe and  Indiana Wesleyan University  
+                    </p>
+                    <p>
+                        Doris completed her Ph.D. at Walden University in Applied  Management and Decision Science – Accounting Specialization. Her dissertation  entitled “The affect of IFRS for SMEs adoption by U.S. private entities” studied how adoption of international standards would change the financial  information reported by private entities that currently follow U.S. GAAP. 
+                    </p>
+                    <p>
+                        She is a certified public accountant and a certified global  managerial accountant. Her professional memberships include the American  Institute of Certified Public Accountants, the Oklahoma Society of CPAs, and  the American Accounting Association 
+                    </p>
+                    <p>
+                        Doris is married to Don Feltham, who is also a graduate of  the ORU. Don currently serves as the Global Chief Financial Officer of a German  manufacturer located near Bonn, Germany. Doris and Don are parents of three  children who have all attended ORU: Sarah (Class of 2007), Chris (Class of  2011) and Abigail (Class of 2017) Doris enjoys hiking, traveling and spending time with family 
+                    </p>
+                </div>  
+            </div>
+            <div class="coll mt-5 mb-5" id="chancey-bosch">
+                <img class="float-left mr-4" src="images/chancey-bosch.jpg" alt="chancey-bosch" height="315" width="255">
+                <div>
+                    <h3 class="font-weight-bold title">DR. CHANCEY BOSCH <button class="float-right btn-danger"><i class="far fa-window-close bg-danger"></i></button> </h3>
+                    <h6 class="mb-4">ASSOCIATE PROFESSOR OF CURRICULUM AND INSTRUCTION</h6>
+                    <P>
+                        Dr. Chancey  Bosch comes to Oral Roberts University with a diverse background, which  includes 6 years in the Marine Corps, 7 years of public school teaching and  coaching and 7 years as an associate pastor. 
+                    </p>
+                    <p>
+                        From nearly 20  years of diverse experience teaching and leading in the public and private  sectors, Dr. Bosch applies the drive to make learning meaningful and  applicable. He currently teaches graduate classes to a diverse student  population serving in a variety of leadership positions. Serving the variations  between people and purpose is a focus to help empower and transform leaders for  immediate influence in their sector.
+                    </p>
+                    <p>
+                        Dr. Bosch’s  research on service learning extends best practices from a pedagogical approach  to an administrative and institutional approach. The research aligns with his  values of service as an integrated component of the academic content and spiritual growth process.
+                    </p>
+                    <p>
+                        Dr.  Bosch received his B.S. in Education from the University of Oklahoma, his MA in  Curriculum and Instruction from the University of Phoenix, his MA in  Educational Leadership from the University of Phoenix, and his PhD in Higher  Education Administration from the University of Phoenix.
+                    </p>
+                </div>  
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="btn col-12 text-left" data-toggle="collapse" data-target="#Education" >COLLEGE OF EDUCATION <i class="fas fa-plus float-right"></i></h2>
+            <div id="Education" class="collapse mb-4">
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/wonsuk-ma.jpg" alt="WONSUK MA" height="160" width="120" class="rounded d-inline-block facMember" id="wonsuk-ma"></a>     
+                        <div class="d-inline-block col-7 align-top ml-3">
+                            <h5 class="facMember" id="wonsuk-ma"><a href="" class="title font-weight-bold">DR. WONSUK MA</a></h5>
+                            <P class="main">DEAN COLLEGE OF THEOLOGY AND MINISTRY, DISTINGUISHED PROFESSOR OF GLOBAL CHRISTIANITY</P>
+                            <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> wma@oru.edu</P>
+                            <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.7016</p>
+                        </div>
+                </div>
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/jeffrey-lamp.jpg" alt="Jeffrey" height="160" width="120" class="rounded d-inline-block facMember" id="jeffrey-lamp"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember" id="jeffrey-lamp"><a href="" class="title font-weight-bold">DR. JEFF LAMP</a> </h5>
+                        <P class="main">PROFESSOR OF NEW TESTAMENT, UNDERGRADUATE COLLEGE OF THEOLOGY AND MINISTRY</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> jlamp@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.7670</p>
+                    </div>
                 </div>
             </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/bill_collier.jpg" alt="WILLIAM COLLIER" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. WILLIAM COLLIER </a></h4>
-                    <P class="main">PROFESSOR OF CHEMISTRY</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> lwcollier@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6927</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
-                </div>
+            <div class="coll mt-5 mb-5" id="wonsuk-ma">
+                <img class="float-left mr-4" src="images/wonsuk-ma.jpg" alt="WONSUK MA" height="315" width="255">
+                <div>
+                    <h3 class="font-weight-bold title">DR. WONSUK MA <button class="float-right btn-danger"><i class="far fa-window-close bg-danger"></i></button> </h3>
+                    <h6 class="mb-4">DEAN COLLEGE OF THEOLOGY AND MINISTRY, DISTINGUISHED PROFESSOR OF GLOBAL CHRISTIANITY</h6>
+                    <P>
+                        Dr. Ma is a Korean Pentecostal scholar who spent most of his  career life in four countries. His first theological study was at Hansei  University (then, Full Gospel Theological College), during which he spent two  years in Vietnam as a soldier. His first ministry was at an Assembly of God  church at the original place where David Yonggi Cho had opened his first tent  church. During this short 2.5 year period, he ministered among youths, married  his wife Julie, and received ordination.                  
+                    </p>
+                    <p>
+                        Then the family began a new life as missionaries to the  Philippines from 1979 to 2006. They engaged in various ministries, including  evangelism and church planting among mountain tribal groups and theological  education at Asia Pacific Theological Seminary, Baguio City. They developed a  strong sense of “Mission in the Spirit” both practically and theoretically. He  chose his PhD dissertation title, “The Spirit of God in Isaiah,” to enrich his  understanding of the Spirit in mission. In addition, he developed “Asian  Pentecostal Studies” as a discipline. He established the Asian Pentecostal  Society and served as Founding President (1998-2000), and founded <i>Asian Journal  of Pentecostal Studies.</i>
+                        Besides his tribal ministry and teaching, he also  served in various administrative responsibilities, including Vice President for  Academic Affairs. He participated in various international mission and  ecumenical meetings as an Asian Pentecostal.
+                    </p>
+                    <p>
+                        From 2006 to 2016, he served as Executive Director and David  Yonggi Cho Research Tutor of Global Christianity at Oxford Centre for Mission  Studies, Oxford, United Kingdom. During this decade, the school grew to offer  the largest PhD program in mission studies throughout Europe. He also directed  Regnum Books International, which has published, among others, the 35-volume  Regnum Edinburgh Centenary Series. At the same time, he and his wife enjoyed  walking along The Thames and British countryside, as well as city-hopping  throughout Europe.                  
+                    </p>
+                    <p>
+                        Now at ORU, he feels that he has come “home” to teach and  research on the Holy Spirit and Global Christianity. His desire is to bring  together 1) the theological richness of the OT, 2) local theologies of  Pentecostalism (as experienced in Asia), 3) the bigger global picture of the  Spirit’s work in our time, and 4) God’s unchanging mission in human history. He  feels privileged to serves as Distinguished Professor of Global Christianity at  this spiritually and academically committed university community.             
+                    </p>
+                    <P>
+                        He and his wife, Julie, who also teaches at ORU, have two  sons. The elder one has been serving as a missionary to the Philippines, while  the younger son teaches English in Seoul, Korea. They are proud grandparents to  adorable grandchildren who live in Manila.
+                    </P>
+                </div>  
             </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/catherine_klehm.jpg" alt="Catherine" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. CATHERINE KLEHM </a></h4>
-                    <P class="main">ASSOCIATE PROFESSOR OF CHEMISTRY</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> cklehm@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6919</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
-                </div>
+            <div class="coll mt-5 mb-5" id="jeffrey-lamp">
+                <img class="float-left mr-4" src="images/jeffrey-lamp.jpg" alt="Jeffrey" height="315" width="255">
+                <div>
+                    <h3 class="font-weight-bold title">DR. JEFF LAMP <button class="float-right btn-danger"><i class="far fa-window-close bg-danger"></i></button> </h3>
+                    <h6 class="mb-4">PROFESSOR OF NEW TESTAMENT, UNDERGRADUATE COLLEGE OF THEOLOGY AND MINISTRY</h6>
+                    <P>
+                        Weightlifting, camping and keeping up with his two beloved basset hounds, Harley and Norma Jean, keep Dr. Lamp pretty busy when he's away from campus. Although Dr. Lamp has shown basset hounds in the past, both of his current dogs were rescued, not purchased.
+                    </p>
+                    <p>
+                        When he's on campus, he's teaching Biblical Greek, New Testament Letters, Beginning Preaching and Principles of Biblical Interpretation. Plus, he's undertaking some exciting research exploring the intersection between theology and ecology. For this, he collaborates with such organizations as the Ecological Hermeneutics section with the Society of Biblical Literature.                    
+                    </p>
+                    <p>
+                        Dr. Lamp was born in South Dakota, but lived in Tulsa from age 10. He completed his B.S. at the University of Oklahoma in Norman, undertook seminary at ORU and received his Ph.D. from Trinity Evangelical Divinity School in Chicago.                    
+                    </p>
+                    <p>
+                        He was ordained in the United Methodist Church as a Deacon in 1991 and an elder in 1999. Dr. Lamp pastored in the United Methodist Church for eight years. Having always wanted to teach, for three years he led classes at ORU part-time before becoming a full-time professor in fall 2000. "I enjoy developing relationships with my students," Dr. Lamp commented. "I think the bond between faculty and students is closer at ORU that at most other universities. I keep in touch with many of my students for years after they graduate. It's fun to see where God is taking them in their lives."
+                    </p>
+                    <p>
+                        Dr. Lamp is married to wife Monica and enjoys spending time with his two grandsons and granddaughter.
+                    </p>
+                </div>  
             </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/chancey-bosch.jpg" alt="Chancey" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. CHANCEY BOSCH </a></h4>
-                    <P class="main">ASSISTANT PROFESSOR OF CURRICULUM AND INSTRUCTION</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> cbosch@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6595</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+        </div>
+
+        <div class="content">
+            <h2 class="btn col-12 text-left" data-toggle="collapse" data-target="#Nursing" >COLLEGE OF NURSING <i class="fas fa-plus float-right"></i></h2>
+            <div id="Nursing" class="collapse mb-4">
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/angena-farmer.jpg" alt="WILLIAM COLLIER" height="160" width="120" class="rounded d-inline-block facMember"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h4 class="facMember"><a href="" class="title font-weight-bold">DR. AGENA FARMER </a></h4>
+                        <P class="main">ASSISTANT PROFESSOR OF ORGANIZATIONAL/INTERPERSONAL COMMUNICATION</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> afarmer@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6862</p>
+                    </div>
                 </div>
-            </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/daniel_thimell.jpg" alt="daniel_thimell" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. DANIEL THIMELL </a></h4>
-                    <P class="main">ASSISTANT PROFESSOR OF THEOLOGICAL HISTORICAL STUDIES, GRADUATE SCHOOL OF THEOLOGY AND MINISTRY</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> dthimell@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6085</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
-                </div>
-            </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/doris-feltham.jpg" alt="Doris" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. DORIS FELTHAM </a></h4>
-                    <P class="main">ASSISTANT PROFESSOR OF FINANCE</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> dfeltham@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6113</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
-                </div>
-            </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/jeffrey-lamp.jpg" alt="Jeffrey" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. JEFF LAMP</a> </h4>
-                    <P class="main">PROFESSOR OF NEW TESTAMENT, UNDERGRADUATE COLLEGE OF THEOLOGY AND MINISTRY</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> jlamp@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.7670</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
-                </div>
-            </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/julie-ma.jpg" alt="Doris" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. JULIE MA</a> </h4>
-                    <P class="main">ASSOCIATE PROFESSOR OF MISSIONS AND INTERCULTURAL STUDIES, UNDERGRADUATE COLEGE OF THEOLOGY AND MINISTRY</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> jma@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6103</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
-                </div>
-            </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/kerry-loescher.jpg" alt="Kerry" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">KERRY LOESCHER</a> </h4>
-                    <P class="main">INSTRUCTOR OF PRACTICAL MINISTRY, UNDERGRADUATE COLLEGE OF THEOLOGY AND MINISTRY</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> kloescher@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6102</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
-                </div>
-            </div>
-            <div class="d-inline-block members m-2 mb-5">
-               <a href=""> <img src="images/vinson-synan.jpg" alt="vinson-synan" height="220" width="190" class="rounded d-inline-block facMember"></a>     
-                <div class="d-inline-block col-7 align-top ml-3">
-                    <h4 class="facMember"><a href="" class="title font-weight-bold">DR. VINSON SYNAN </a></h4>
-                    <P class="main">SCHOLAR IN RESIDENCE; PH.D. PROGRAM DIRECTOR, GRADUATE SCHOOL OF THEOLOGY AND MINISTRY</P>
-                    <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> hsynan@oru.edu</P>
-                    <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.7016</p>
-                    <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/catherine_klehm.jpg" alt="Catherine" height="160" width="120" class="rounded d-inline-block facMember"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h4 class="facMember"><a href="" class="title font-weight-bold">DR. CATHERINE KLEHM </a></h4>
+                        <P class="main">ASSOCIATE PROFESSOR OF CHEMISTRY</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> cklehm@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6919</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="content">
+            <h2 class="btn col-12 text-left" data-toggle="collapse" data-target="#ScienceNEng" >COLLEGE OF SCIENCE AND ENGINEERING <i class="fas fa-plus float-right"></i></h2>
+            <div id="ScienceNEng" class="collapse mb-4">
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/lois_ablin.jpg" alt="Lois Ablin" height="160" width="120" class="rounded d-inline-block facMember"></a>    
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember"><a href="" class=" title font-weight-bold ">DR. LOIS ABLIN</a></h5>
+                        <P class="main">ASSOCIATE PROFESSOR OF CHEMISTRY</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> lablin@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6926</p>
+                        <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+                    </div>
+                </div>
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/Stephen-Wheat.jpg" alt="Stephen Wheat" height="160" width="120" class="rounded d-inline-block facMember"></a>   
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h5 class="facMember"><a href="" class="title font-weight-bold">DR. STEPHEN R. WHEAT</a></h5>
+                        <P class="main">PROFESSOR OF COMPUTER SCIENCE</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> swheat@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6692</p>
+                        <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="btn col-12 text-left" data-toggle="collapse" data-target="#Theology" >COLLEGE OF THEOLOGY AND MINISTRY <i class="fas fa-plus float-right"></i></h2>
+
+            <div id="Theology" class="collapse mb-4">
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/daniel_thimell.jpg" alt="daniel_thimell" height="160" width="120" class="rounded d-inline-block facMember"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h4 class="facMember"><a href="" class="title font-weight-bold">DR. DANIEL THIMELL </a></h4>
+                        <P class="main">ASSISTANT PROFESSOR OF THEOLOGICAL HISTORICAL STUDIES, GRADUATE SCHOOL OF THEOLOGY AND MINISTRY</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> dthimell@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6085</p>
+                        <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+                    </div>
+                </div>
+                <div class="d-inline-block members m-2 mt-3">
+                    <a href=""> <img src="images/julie-ma.jpg" alt="Doris" height="160" width="120" class="rounded d-inline-block facMember"></a>     
+                    <div class="d-inline-block col-7 align-top ml-3">
+                        <h4 class="facMember"><a href="" class="title font-weight-bold">DR. JULIE MA</a> </h4>
+                        <P class="main">ASSOCIATE PROFESSOR OF MISSIONS AND INTERCULTURAL STUDIES, UNDERGRADUATE COLEGE OF THEOLOGY AND MINISTRY</P>
+                        <P class="mb-0 mt-4 main"><span class="title font-weight-bold">Email:</span> jma@oru.edu</P>
+                        <p class="m-0 main"><span class="title font-weight-bold">Phone:</span> 918.495.6103</p>
+                        <a href="" class="m-0 title main font-weight-bold navB">Click Here To View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
-    <footer>
+    <footer class="mt-5">
         <div class="d-inline-block base">
             <div class="d-inline-block">
                 <ul class="myList">
-                    <li><a href="" class="title navB"> BOOKSTORE </a></li>
-                    <li><a href="" class="title navB"> DIRECTIONS </a></li>
-                    <li><a href="" class="title navB"> EMPLOYMENT </a></li>
-                    <li><a href="" class="title navB"> LIBRARY </a></li>
-                    <li><a href="" class="title navB"> CAMPUS SAFETY </a></li>
+                    <li><a href="" class="navB"> BOOKSTORE </a></li>
+                    <li><a href="" class="navB"> DIRECTIONS </a></li>
+                    <li><a href="" class="navB"> EMPLOYMENT </a></li>
+                    <li><a href="" class="navB"> LIBRARY </a></li>
+                    <li><a href="" class="navB"> CAMPUS SAFETY </a></li>
                 </ul>
             </div>
             <div class="d-inline-block">
                 <ul class="myList">                
-                    <li><a href="" class="title navB"> ACCREDITATION </a></li>
-                    <li><a href="" class="title navB"> KORU RADIO </a></li>
-                    <li><a href="" class="title navB"> CAMPUS NEWS </a></li>
-                    <li><a href="" class="title navB"> MY ORU </a></li>
-                    <li><a href="" class="title navB"> GEB NETWORK </a></li>
+                    <li><a href="" class="navB"> ACCREDITATION </a></li>
+                    <li><a href="" class="navB"> KORU RADIO </a></li>
+                    <li><a href="" class="navB"> CAMPUS NEWS </a></li>
+                    <li><a href="" class="navB"> MY ORU </a></li>
+                    <li><a href="" class="navB"> GEB NETWORK </a></li>
                 </ul>
             </div>
         </div>
@@ -224,23 +451,24 @@
         <div class="d-inline-block base">
             <div class="d-inline-block">
                 <ul class="myList">
-                    <li><a href="" class="title navB"> BOOKSTORE</a></li>
-                    <li><a href="" class="title navB"> DIRECTIONS</a></li>
-                    <li><a href="" class="title navB"> EMPLOYMENT</a></li>
-                    <li><a href="" class="title navB"> LIBRARY</a></li>
-                    <li><a href="" class="title navB"> CAMPUS SAFETY</a></li>
+                    <li><a href="" class="navB"> BOOKSTORE</a></li>
+                    <li><a href="" class="navB"> DIRECTIONS</a></li>
+                    <li><a href="" class="navB"> EMPLOYMENT</a></li>
+                    <li><a href="" class="navB"> LIBRARY</a></li>
+                    <li><a href="" class="navB"> CAMPUS SAFETY</a></li>
                 </ul>
             </div>
             <div class="d-inline-block">
                 <ul class="myList">
-                    <li><a href="" class="title navB"> ACCREDITATION</a></li>
-                    <li><a href="" class="title navB"> KORU RADIO</a></li>
-                    <li><a href="" class="title navB"> CAMPUS NEWS</a></li>
-                    <li><a href="" class="title navB"> MY ORU</a></li>
-                    <li><a href="" class="title navB"> GEB <NETWORK</a></li>
+                    <li><a href="" class="navB"> ACCREDITATION</a></li>
+                    <li><a href="" class="navB"> KORU RADIO</a></li>
+                    <li><a href="" class="navB"> CAMPUS NEWS</a></li>
+                    <li><a href="" class="navB"> MY ORU</a></li>
+                    <li><a href="" class="navB"> GEB <NETWORK</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

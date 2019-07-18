@@ -1,12 +1,11 @@
 body {
-    font-family: Serif, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .fixed-top {
     background-color: #002f60;
     opacity: 0.9;
 }
 .mySlides {
-    background-image: url("./images/ORU-WEB-COVER.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,6 +15,12 @@ body {
 }
 .display-3 {
     margin-top: 200px
+}
+h6 {
+    color: #c1a157;
+}
+p {
+    font-size: 14px;
 }
 .members {
     width: 48%;
@@ -28,11 +33,11 @@ body {
     transform: scale(1.2);
 }
 .main {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
 }
 .title {
     color: #002f60;
+    font-family: Serif, sans-serif;
 }
 .title:hover {
     text-decoration-line: none;
@@ -40,7 +45,6 @@ body {
 }
 footer{
     height: 150px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: bold;
     color: #041e42;
@@ -75,6 +79,14 @@ footer{
 .btn {
     background: #002f60;
     color: white;
+    font-family: Serif, sans-serif;
+}
+.btn:hover {
+    background: #002f60;
+    color: white;
+}
+.navB {
+    color: #002f60;
 }
 .navB:hover {
     text-decoration-line: none;
