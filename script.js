@@ -16,15 +16,10 @@ function carousel() {
   setTimeout(carousel, 4000); 
 }
 
-// function toggleIcon(e) {
-//     $(e.target)
-//         .prev('.collapse')
-//         .find(".fas")
-//         .toggleClass('fa-plus fa-minus');
-// }
-// $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-// $('.panel-group').on('shown.bs.collapse', toggleIcon);
-// $('.coll').show();
+$('.btn').click(function(){
+    console.log("yipee");
+    $(this).find("i").toggleClass('fa-plus fa-minus');
+})
 
 $('.facMember').click(function(e){
     console.log("clicked");
@@ -47,11 +42,13 @@ $('.facMember').click(function(e){
 })
 
 $('.expand').click(function(){
-    $('.collapse').collapse('show')
+    // $('.collapse').collapse('show')
+    $('.btn').find("i").toggleClass('fa-plus fa-minus');
     $(this).text("Close All -");
-    $('.expand').click(function(){
+    $(this).click(function(){
         $('.collapse').collapse('hide')
         $(this).text("Open All +");
     });
 });
+
 
