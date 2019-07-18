@@ -49,15 +49,9 @@ $('.facMember').click(function(e){
 $('.expand').click(function(){
     $('.collapse').collapse('show')
     $(this).text("Close All -");
-    $(this).removeClass('expand');
-    $(this).addClass('closeAll');
-
-    $('.closeAll').click(function(){
+    $('.expand').click(function(){
         $('.collapse').collapse('hide')
         $(this).text("Open All +");
-        $(this).removeClass('closeAll');
-        $(this).addClass('expand');
-    
     });
 });
 
