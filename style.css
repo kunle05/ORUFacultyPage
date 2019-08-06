@@ -69,24 +69,10 @@ p {
     margin-right: 10px;
 }
 footer{
-    height: 150px;
     font-size: 13px;
     font-weight: bold;
     color: #041e42;
     border-top: 4px outset #B1B1B1;
-    text-align: justify;
-}
-.myList {
-    list-style: none;
-    margin: 10px;
-    padding: 10px 0px;
-}
-.navB {
-    color: #002f60;
-}
-.navB:hover {
-    text-decoration-line: none;
-    color: #c1a157;
 }
 .base {
     display: inline-block;
@@ -95,6 +81,12 @@ footer{
     padding: 0px 30px;
     margin: 0px 27px;
 }
+.myList {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 0px;
+}
 .baseImg {
     width: 100%;
     background: #041e42;
@@ -102,17 +94,20 @@ footer{
     text-align: center;
     color: white;
 }
+.navB {
+    color: #002f60;
+}
+.navB:hover {
+    text-decoration-line: none;
+    color: #c1a157;
+}
 .base li {
     margin: 10px;
 }
 
-@media only screen and (max-width: 825px) {
+@media only screen and (max-width: 1024px) {
     .display-3 {
-        font-size: 300%;
-    }
-    .container {
-        width: 100%;
-        padding: 0%;
+        font-size: 400%;
     }
     .members {
         width: 100%;
@@ -124,21 +119,43 @@ footer{
         width: 62%;
     }
     .myList {
-        list-style: none;
-        width: 100%;
-        margin: 10px;
-        margin-left: 50px;
+        width: 30%;
+        margin: 10px 80px;      
     }
     .base {
         width: 100%;
         margin: 0%;
-        padding: 0%;
-        font-size: 20px;
+        padding: 0px;        
     }
     .baseImg {
         width: 100%;
         background: #041e42;
         padding: 20px 0px;
+        text-align: center;
+        color: white;
+    }
+}
+@media only screen and (max-width: 825px) {
+    .display-3 {
+        font-size: 300%;
+    }
+    .container {
+        width: 100%;
+        padding: 0%;
+    }
+    .base {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .myList {
+        width: 30%;
+        margin: 0px 55px;
+    }
+    .baseImg {
+        width: 100%;
+        background: #041e42;
+        padding: 5px;
         text-align: center;
         color: white;
     }
@@ -152,63 +169,19 @@ footer{
         margin: 1%;
         padding: 0%;
     }
-    .members {
-        width: 100%;
-    }
     .members div {
         display: inline-block;
         margin-left: 10px;
         padding: 0px;
-        width: 62%;
+        width: 57%;
     }
     .coll img {
-        height: 380px;
+        height: 500px;
         width: 100%;
         margin-bottom: 10px;
     }
     .myList {
-        margin-left: 0px;
-    }
-    .base {
-        width: 100%;
-        margin: 0%;
-        padding: 0%;
-        font-size: 17px;
-    }
-    .baseImg {
-        width: 100%;
-        background: #041e42;
-        padding: 20px 0px;
-        text-align: center;
-        color: white;
-    }
-}
-@media only screen and (max-width: 1024px) {
-    .members {
-        width: 100%;
-    }
-    .members div {
-        display: inline-block;
-        margin-left: 10px;
-        padding: 0px;
-        width: 60%;
-    }
-    .myList {
-        list-style: none;
-        width: 100%;
-    }
-    .base {
-        width: 100%;
-        margin: 0%;
-        padding: 10px;
-        font-size: 25px;
-        justify-content: center;
-    }
-    .baseImg {
-        width: 100%;
-        background: #041e42;
-        padding: 20px 0px;
-        text-align: center;
-        color: white;
+        width: 46%;
+        margin: 0px 5px;
     }
 }
