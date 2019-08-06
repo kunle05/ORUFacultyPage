@@ -105,7 +105,12 @@ footer{
     margin: 10px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1366px) {
+    .mySlides {
+        height: 350px;
+        background-size: cover;
+        background-attachment: scroll;
+    }
     .display-3 {
         font-size: 400%;
     }
@@ -139,9 +144,10 @@ footer{
     .mySlides {
         height: 300px;
         background-size: cover;
+        background-attachment: scroll;
     }
     .display-3 {
-        font-size: 300%;
+        font-size: 265%;
     }
     .container {
         width: 100%;
