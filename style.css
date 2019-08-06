@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 .fixed-top {
     background-color: #002f60;
@@ -13,35 +14,59 @@ body {
     width: 100%;
     height: 350px;
 }
-.display-3 {
-    margin-top: 200px
-}
-h6 {
-    color: #c1a157;
-}
-p {
-    font-size: 14px;
-}
-.members {
-    width: 48%;
-}
-.searchWord {
-    font-size: 11px;
-}
-.facMember:hover {
-    color: #002f60;
-    transform: scale(1.2);
-}
-.main {
-    font-size: 12px;
+.bottom {
+    padding-top: 150px;
 }
 .title {
     color: #002f60;
     font-family: Serif, sans-serif;
 }
+.btn {
+    background: #002f60;
+    color: white;
+    font-family: Serif, sans-serif;
+}
+.searchNav {
+    background: #cfb67c;
+    height: 100px;
+}
+.searchWord {
+    font-size: 12px;
+}
+
+p {
+    font-size: 12px;
+}
+.members {
+    width: 48%;
+    display: inline-block;
+    margin: 7px;
+}
+.members img {
+    display: inline-block;
+    width: 120px;
+    height: 160px;
+}
+.members div {
+    display: inline-block;
+    margin-left: 20px;
+    padding-right: 0px;
+    padding-left: 15px;
+    width: 70%;
+}
+.facMember:hover {
+    color: #002f60;
+    transform: scale(1.2);
+}
 .title:hover {
     text-decoration-line: none;
     color: #002f60;
+}
+.coll img {
+    float: left;
+    height: 315px;
+    width: 255px;
+    margin-right: 10px;
 }
 footer{
     height: 150px;
@@ -49,42 +74,12 @@ footer{
     font-weight: bold;
     color: #041e42;
     border-top: 4px outset #B1B1B1;
-}
-.base {
-    width: 390px;
-    list-style: none;
-    vertical-align: top;
-    margin-left: 55px;
-}
-.base li {
-    list-style: none;
-    margin: 10px;
+    text-align: justify;
 }
 .myList {
-    height: 150px;
-    padding: 10px;
-}
-.baseImg {
-    width: 330px;
-    vertical-align: top;
-    margin-left: 55px;
-    background: #041e42;
-    padding: 20px 10px;
-    text-align: center;
-    color: white;
-}
-.searchNav {
-    background: #cfb67c;
-    height: 100px;
-}
-.btn {
-    background: #002f60;
-    color: white;
-    font-family: Serif, sans-serif;
-}
-.btn:hover {
-    background: #002f60;
-    color: white;
+    list-style: none;
+    margin: 10px;
+    padding: 10px 0px;
 }
 .navB {
     color: #002f60;
@@ -92,4 +87,128 @@ footer{
 .navB:hover {
     text-decoration-line: none;
     color: #c1a157;
+}
+.base {
+    display: inline-block;
+    width: 29%;
+    vertical-align: top;
+    padding: 0px 30px;
+    margin: 0px 27px;
+}
+.baseImg {
+    width: 100%;
+    background: #041e42;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+}
+.base li {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 825px) {
+    .display-3 {
+        font-size: 300%;
+    }
+    .container {
+        width: 100%;
+        padding: 0%;
+    }
+    .members {
+        width: 100%;
+    }
+    .members div {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 0px;
+        width: 62%;
+    }
+    .myList {
+        list-style: none;
+        width: 100%;
+        margin: 10px;
+        margin-left: 50px;
+    }
+    .base {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
+    .baseImg {
+        width: 100%;
+        background: #041e42;
+        padding: 20px 0px;
+        text-align: center;
+        color: white;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .display-3 {
+        font-size: 150%;
+    }
+    .container {
+        width: 98%;
+        margin: 1%;
+        padding: 0%;
+    }
+    .members {
+        width: 100%;
+    }
+    .members div {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 0px;
+        width: 62%;
+    }
+    .coll img {
+        height: 380px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .myList {
+        margin-left: 0px;
+    }
+    .base {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        font-size: 17px;
+    }
+    .baseImg {
+        width: 100%;
+        background: #041e42;
+        padding: 20px 0px;
+        text-align: center;
+        color: white;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .members {
+        width: 100%;
+    }
+    .members div {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 0px;
+        width: 60%;
+    }
+    .myList {
+        list-style: none;
+        width: 100%;
+    }
+    .base {
+        width: 100%;
+        margin: 0%;
+        padding: 10px;
+        font-size: 25px;
+        justify-content: center;
+    }
+    .baseImg {
+        width: 100%;
+        background: #041e42;
+        padding: 20px 0px;
+        text-align: center;
+        color: white;
+    }
 }
